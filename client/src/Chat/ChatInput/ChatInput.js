@@ -45,7 +45,15 @@ const ChatInput = (props) => {
                 name="message" 
                 value={message}
                 onChange={onMessageUpdate} />
-            <br/><br/>
+            <br/>
+              <form 
+                   onSubmit = {onSubmit}>
+                       <label htmlFor ="Profile"> User: </label>
+                        <input 
+                            id = "user"
+                            name = "user"
+                            value = "user"
+                            onchange = {onUserProfile} />
             <button>Submit</button>
         </form>
     )
